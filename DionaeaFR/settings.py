@@ -15,7 +15,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/var/lib/dionaea/logsql.sqlite',
+        'NAME': '/var/dionaea/logsql.sqlite',
         'USER': '',  # Not used with sqlite3.
         'PASSWORD': '',  # Not used with sqlite3.
         'HOST': '',  # Set to empty string for localhost. Not used with sqlite3.
@@ -70,6 +70,7 @@ MEDIA_URL = '/media/'
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = os.path.abspath(os.path.join(os.path.join(CURRENT_PATH, os.pardir), 'static'))
+#STATIC_ROOT = os.path.abspath(os.path.join(os.path.join(CURRENT_PATH, os.pardir), 'static'))
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
